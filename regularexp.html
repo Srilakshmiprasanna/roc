@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+</head>
+<body>
+<h4>JavaScript Regular expression to valid an email address</h4>
+<p id="demo"></p>
+<script>
+function valid_email(str)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(mailformat.test(str))
+{  
+document.getElementById('demo').innerHTML="Valid email address!";  
+}  
+else  
+{  
+document.getElementById('demo').innerHTML="You have entered an invalid email address!";  
+}
+}
+
+valid_email('talentio23.com');
+</script>
+</body>
+</html>
